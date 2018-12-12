@@ -14,4 +14,4 @@ public class Room {
     public void leaveRoom(Person p){
         p1=null;
     }
-}
+} 
