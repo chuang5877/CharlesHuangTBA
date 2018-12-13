@@ -9,10 +9,10 @@ public class Skeleton extends Room {
     public Skeleton(int x,int y){
 
     }
-    public void enterRoom(Person x){
-        p1=x;
-        x.setX(this.x);
-        x.setY(this.y);
+    public void enterRoom(Person n){
+        p1=n;
+        n.setX(this.x);
+        n.setY(this.y);
         System.out.print("You enter a room with a skeleton. The skeleton approaches you. Do you want to attack?");
         Scanner in=new Scanner(System.in);
         String i=in.nextLine();
