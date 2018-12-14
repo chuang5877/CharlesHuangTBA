@@ -1,6 +1,6 @@
 package com.company;
 
-public class Person {
+public class Person implements PersonI {
     int x;
     int y;
     public int getX(){

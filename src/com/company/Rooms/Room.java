@@ -6,6 +6,10 @@ public class Room {
     Person p1;
     int x;
     int y;
+    public Room(int x, int y){
+        this.x=x;
+        this.y=y;
+    }
     public void enterRoom(Person p){
         p1=p;
         p.setX(this.x);

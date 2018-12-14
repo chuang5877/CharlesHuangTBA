@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Skeleton extends Room {
 
     public Skeleton(int x,int y){
-
+        super(x,y);
     }
     public void enterRoom(Person n){
         p1=n;

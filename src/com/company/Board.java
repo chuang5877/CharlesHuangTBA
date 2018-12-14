@@ -1,24 +1,26 @@
 package com.company;
 
 import com.company.Rooms.Room;
+import com.company.Person;
 
 public class Board {
-    static Room[][] board;
+    Room[][]b;
+    public Board(Room[][]b){
+        this.b=b;
+    }
     public Board(int h, int w){
-        this.board=new Room[h][w];
+        b=new Room[h][w];
     }
-    public static int length(){
-        int c=0;
-        for(int i=0;i<board.length;i++){
-            c++;
-        }
-        return c;
-    }
-    public void printBoard(){
+    public void printBoard(Person p1){
         String s="[ ]";
-        for(Room[] i:board){
-            for(Room n:i){
-                System.out.print(s);
+        String p="[X]";
+        for(Room[] i:b){
+            for(Room n:i) {
+                if (i.equals(p1.getX()) && n.equals(p1.getY())) {
+                    System.out.print(p);
+                } else {
+                    System.out.print(s);
+                }
             }
             System.out.print('\n');
         }
