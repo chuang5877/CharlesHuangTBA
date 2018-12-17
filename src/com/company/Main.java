@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 import com.company.Person;
+import com.company.Rooms.Door;
 import com.company.Rooms.Room;
 import com.company.Rooms.EmptyRoom;
 import com.company.Rooms.Skeleton;
@@ -21,8 +22,13 @@ public class Main {
         int y = (int)(Math.random()*building.length);
         int a=(int)(Math.random()*building.length);
         int b=(int)(Math.random()*building.length);
+        int c=(int)(Math.random()*building.length);
+        int d=(int)(Math.random()*building.length);
         building[x][y] = new Skeleton(x, y);
+        building[b][x]=new Skeleton(b,x);
+        building[d][a]=new Skeleton(d,a);
         building[a][b]=new Skeleton(a,b);
+        building[c][d]=new Door(c,d);
         b1.printBoard(p0);
         Person p1=new Person(0,0);
         Scanner in=new Scanner(System.in);
